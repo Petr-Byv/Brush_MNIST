@@ -6,7 +6,7 @@
 
 ![](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/moviesl6.gif "43 sample")
 
-![](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/movieslPIL6.gif "43 sample")
+![gif example](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/movieslPIL6.gif "43 sample")
 
 
 ![me](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/movie13.gif "43 sample")
