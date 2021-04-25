@@ -19,9 +19,8 @@ def find_nearest_white(img, target):
     nearest_index = np.argmin(distances)
     return nonzero[nearest_index]
 
-def generate_from_mnist_images(shape, brush, traces):
+def generate_from_mnist_images(shape,shapelabel, brush,brushlabel, traces):
     from skimage.morphology import skeletonize, thin
-
     shapetrace=cv2.resize(shape,(224,224))
     shapetrace[np.where(shapetrace!=0)]=1
     shapetrace = skeletonize(shapetrace)
@@ -29,7 +28,7 @@ def generate_from_mnist_images(shape, brush, traces):
     shapetrace=shapetrace.astype('uint8')
     newtrace=np.zeros([2,150])
     for j in range(150):
-        newcoord=find_nearest_white(shapetrace,[int(traces[shape,1,j]),int(traces[shape,0,j])])
+        newcoord=find_nearest_white(shapetrace,[int(traces[shapelabel,1,j]),int(traces[shapelabel,0,j])])
         newtrace[:,j]=[newcoord[0][1],newcoord[0][0]]
     newtrace=newtrace.astype('uint8')
     sample=np.zeros([150,224,224])
