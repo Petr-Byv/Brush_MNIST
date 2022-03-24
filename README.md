@@ -6,6 +6,11 @@
 
 <!--- ![](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/moviesl6.gif "43 sample") --->
 
+This is an implementation of the MovingMnist dataset - a simulated dataset of moving Mnist digits for 
+testing deep video models.
+
+Provided the code for samples generarions.
+
 ![plots](https://github.com/Petr-Byv/Video_MNIST/blob/main/src/gifs/test.gif "43 sample")
 
 
